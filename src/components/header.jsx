@@ -29,11 +29,11 @@ const Header = () => {
                     <span className="line"></span>
                 </button>
                 <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                    <li><a href='#' onClick={handleNavLinkClick}>Home</a></li>
-                    <li><a href='#' onClick={handleNavLinkClick}>Services</a></li>
-                    <li><a href='#' onClick={handleNavLinkClick}>About Us</a></li>
-                    <li><a href='#' onClick={handleNavLinkClick}>Contact Us</a></li>
-                    <li><a href='#' onClick={handleNavLinkClick}>Careers</a></li>
+                    <li><a href='#hero_section' onClick={handleNavLinkClick}>Home</a></li>
+                    <li><a href='#services_section' onClick={handleNavLinkClick}>Services</a></li>
+                    <li><a href='#about_section' onClick={handleNavLinkClick}>About Us</a></li>
+                    <li><a href='#contact_section' onClick={handleNavLinkClick}>Contact Us</a></li>
+                    <li><a href='#career_section' onClick={handleNavLinkClick}>Careers</a></li>
                     <button className="close-btn" onClick={closeMenu}>Close</button>
                 </ul>
             </nav>

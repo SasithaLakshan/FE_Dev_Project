@@ -22,10 +22,10 @@ header{
         }
     }
 
-    @media screen and (max-width:374.98px) {
+    @media screen and (max-width:375px) {
         display: none;
     }
-    @media screen and (min-width:375px) {
+    @media screen and (min-width:375.02px) and (max-width:767.98px) {
         nav{
             position: absolute;
             width: 100%;
