@@ -2,6 +2,7 @@ header{
     position: sticky;
     top: 0;
     background-color: #6B3CC9;
+    z-index: 999;
     nav{
         display: flex;
         justify-content: space-between;
