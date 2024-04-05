@@ -1,0 +1,147 @@
+header{
+    position: sticky;
+    top: 0;
+    background-color: #6B3CC9;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+           width: 200px;
+           height: auto;
+           transition: all 1s ease;
+        }
+        .hamburger{
+            border: none;
+            background: transparent;
+        }
+        .menu{
+            .close-btn{
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width:374.98px) {
+        display: none;
+    }
+    @media screen and (min-width:375px) {
+        nav{
+            position: absolute;
+            width: 100%;
+            background-color: #6B3CC9;
+            height: 77px;
+            .logo{
+                width: 150px;
+                height: auto;
+                margin-left: 1rem;
+            }
+            .hamburger{
+                transition: all 1s ease;
+                width: 25px;
+                height: fit-content;
+                margin-right: 1rem;
+                .line{
+                    border-radius: 5px;
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: white;
+                }
+                .line:nth-child(2){
+                    margin-top: 5px;
+                }
+                .line:nth-child(3){
+                    margin-top: 5px;
+                }
+            }
+
+            .menu{
+                display: none;
+            }
+
+            &.open{
+                .menu{
+                    display: flex;
+                    flex-direction: column;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    background-color: #6B3CC9;
+                    padding-top: 77px;
+                    z-index: 999;
+                    li{
+                        margin-right: 0;
+                        margin-bottom: 20px;
+                        margin-left: 2rem;
+                        list-style: none;
+                        a{
+                            font-family: 'Inter',sans-serif;
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                    .close-btn{
+                        display: block;
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                        background-color: transparent;
+                        border: none;
+                        color: white;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        .nav{
+            height: 77px;
+            .logo{
+                width: 200px;
+                height: auto;
+                margin-left: 2rem;
+            }
+            .hamburger{
+                display: none;
+            }
+            .menu{
+                display: flex;
+                align-items: center;
+                margin-right: 2rem;
+                li{
+                    margin-inline: 15px;
+                    margin-inline-end: 0;
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        font-size: 14px;
+                        font-family: 'Inter',sans-serif;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        .nav{
+            .logo{
+                width: 238px;
+                height: auto;
+                margin-left: 3rem;
+            }
+            .menu{
+                margin-right: 3rem;
+            }
+        }
+    }
+    @media screen and (min-width:1440px) {
+        background-color: lightgreen;
+    }
+}
