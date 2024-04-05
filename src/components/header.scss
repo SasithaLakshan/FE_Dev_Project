@@ -132,6 +132,18 @@ header{
     @media screen and (min-width:1200px) {
         .nav{
             .logo{
+                width: 230px;
+                height: auto;
+                margin-left: 2.5rem;
+            }
+            .menu{
+                margin-right: 2.5rem;
+            }
+        }
+    }
+    @media screen and (min-width:1440px) {
+        .nav{
+            .logo{
                 width: 238px;
                 height: auto;
                 margin-left: 3rem;
@@ -140,8 +152,5 @@ header{
                 margin-right: 3rem;
             }
         }
-    }
-    @media screen and (min-width:1440px) {
-        background-color: lightgreen;
     }
 }
