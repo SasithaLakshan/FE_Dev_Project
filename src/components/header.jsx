@@ -14,13 +14,20 @@ const Header = () => {
     };
 
     const handleNavLinkClick = () => {
-        setIsMenuOpen(false); // Close the off-canvas menu when a nav link is clicked
+        setIsMenuOpen(false);
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     };
 
     return (
         <header>
             <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-                <div className='logo'>
+                <div className='logo' onClick={scrollToTop}>
                     <img src={logoDesktop} alt='Desktop Logo' className='logo_desktop' />
                 </div>
                 <button className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -29,12 +36,13 @@ const Header = () => {
                     <span className="line"></span>
                 </button>
                 <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                    {/* <li><a href='#hero_section' onClick={handleNavLinkClick}>Home</a></li> */}
-                    <li><a href='#services_section' onClick={handleNavLinkClick}>Services</a></li>
-                    <li><a href='#about_section' onClick={handleNavLinkClick}>About Us</a></li>
-                    <li><a href='#contact_section' onClick={handleNavLinkClick}>Contact Us</a></li>
-                    <li><a href='#career_section' onClick={handleNavLinkClick}>Careers</a></li>
-                    <button className="close-btn" onClick={closeMenu}>Close</button>
+                    <div className='wrapper'>
+                        <li><a href='#services_section' onClick={handleNavLinkClick}>Services</a></li>
+                        <li><a href='#about_section' onClick={handleNavLinkClick}>About Us</a></li>
+                        <li><a href='#contact_section' onClick={handleNavLinkClick}>Contact Us</a></li>
+                        <li><a href='#career_section' onClick={handleNavLinkClick}>Careers</a></li>
+                        <button className="close-btn" onClick={closeMenu}>×</button>
+                    </div>
                 </ul>
             </nav>
         </header>
