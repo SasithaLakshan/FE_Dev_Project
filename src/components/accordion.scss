@@ -1,0 +1,189 @@
+.accordion {
+    background-color: #FAF8FF;
+    &-header{
+        display: flex;
+        align-items: center;
+        transition: color 0.3s ease;
+        cursor: pointer;
+        color: #000;
+        background-color: #FAF8FF;
+        .accordion-title{
+            flex: 1;
+            p{
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        .accordion-icon{
+            transition: transform .3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        &.open{
+            color: #6B3CC9;
+            font-family: 'Inter',sans-serif;
+            font-weight: 600;
+        }
+    }
+
+    &-content{
+        overflow: hidden;
+        font-family: 'Inter', sans-serif;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        max-height: 0;
+    }
+
+    @media screen and (max-width:320px) {
+        width: 95%;
+        margin: 1.5rem auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        &-header {
+            padding: 15px;
+            border-radius: 10px;
+            .accordion-title {
+                p {
+                    font-size: 16px;
+                }
+            }
+            .accordion-icon {
+                flex: .1;
+                margin-top: -1.5rem;
+                font-size: 21px;
+            }
+        }
+
+        &-content {
+            padding-inline: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            &.open {
+                padding: 10px;
+                max-height: 400px;
+            }
+        }
+    }
+    @media screen and (min-width:321px) {
+        width: 85%;
+        margin: 1.2rem auto;
+        border-radius: 5px;
+        margin-bottom: 0;
+        &-header{
+            padding: 15px;
+            border-radius: 5px;
+            .accordion-title{
+                p{
+                    font-size: 14px;
+                }
+            }
+            .accordion-icon{
+                flex: .2;
+                font-size: 22px;
+                display: flex;
+                justify-content: center;
+                margin-right: -1rem;
+            }
+        }
+        &-content{
+            padding-inline: 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            &.open{
+                padding: 20px;
+                max-height: 450px;
+            }
+        }
+    }
+    @media screen and (min-width:375px) {
+        width: 90%;
+        margin: 2rem auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        &-header {
+            padding: 15px;
+            border-radius: 5px;
+            .accordion-title{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .accordion-icon{
+                flex: .2;
+                font-size: 22px;
+                display: flex;
+                justify-content: center;
+                margin-right: -1rem;
+            }
+        }
+        &-content{
+            padding-inline: 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            &.open{
+                padding: 20px;
+                max-height: 450px;
+            }
+        }
+    }
+    @media screen and (min-width:768px) {
+        width: 80%;
+        margin: 1.5rem auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+ 
+        &-header{
+            padding: 20px;
+            border-radius: 10px;
+            .accordion-title{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .accordion-icon{
+                flex: .1;
+                font-size: 22px;
+                display: flex;
+                justify-content: center;
+                margin-right: -1.5rem;
+            }
+        }
+        &-content{
+            padding-inline: 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            &.open{
+                padding: 20px;
+                max-height: 250px;
+            }
+        }
+    }
+    @media screen and (min-width:1200px) {
+        width: 60%;
+        margin: 1.5rem auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        &-header {
+            padding: 20px;
+            border-radius: 10px;
+            .accordion-title {
+                p {
+                    font-size: 16px;
+                }
+            }
+            .accordion-icon{
+                flex: .1;
+                font-size: 21px;
+                display: flex;
+                justify-content: center;
+                margin-right: -1.5rem;
+            }
+        }
+        &-content{
+            padding-inline: 20px;
+            border-radius: 10px;
+            font-size: 16px;
+            &.open{
+                padding: 20px;
+                max-height: 200px;
+            }
+        }
+    }
+}
