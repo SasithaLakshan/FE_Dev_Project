@@ -1,10 +1,12 @@
-button{
+.learnMoreButton{
     background-color: #F28D35;
     border: none;
     border-radius: 5px;
-    padding: 10px 30px;
-    color: white;
-    text-transform: uppercase;
     font-family: 'Inter',sans-serif;
+    color: #FFFFFF;
+    height: 38px;
+    width: 150px;
+    font-size: 14px;
+    text-transform: uppercase;
     font-weight: 700;
 }
