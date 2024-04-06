@@ -1,1 +1,1 @@
-# Front-end Developer Intern Assesment
+# Front-end Developer Intern Assessment
