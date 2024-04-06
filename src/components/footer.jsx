@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className='footer_logo'>
                         <img src={logo} />
                     </div>
-                    <div className='para'>
+                    <div className='paragraph'>
                         <p>Your goal is our target. Not anything in between. We use online marketing platforms and tools to achieve single objective - your business results.</p>
                     </div>
                 </div>

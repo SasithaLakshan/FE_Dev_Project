@@ -1,24 +1,18 @@
 footer{
-    height: 266px;
-    background-color: #6B3CC9;
+    background-color: #6b3cc9;
     .wrapper{
-        padding-top: 2rem;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        width: 95%;
-        margin: 0 auto;
-        grid-gap: 1rem;
         .footer_line_1{
             .footer_logo{
-                width: 250px;
                 height: auto;
+                transition: all 1s ease;
             }
-            .para{
+            .paragraph{
                 margin-top: .5rem;
+                transition: all 1s ease;
                 p{
                     font-family: 'Inter',sans-serif;
-                    font-size: 14px;
-                    color: white;
+                    color: #FFFFFF;
                 }
             }
         }
@@ -26,9 +20,7 @@ footer{
             width: fit-content;
             h2{
                 font-family: 'Inter',sans-serif;
-                font-size: 21px;
                 color: white;
-                margin-bottom: .5rem;
             }
             p{
                 font-family: 'Inter',sans-serif;
@@ -37,157 +29,182 @@ footer{
             }
         }
     }
-    @media screen and (max-width:374px) {
-        height: 580px;
-        padding-left: .5rem;
-        transition: all 1s ease;
-        .wrapper{
-            grid-gap: 30px;
-            grid-template-columns: 1fr;
+    .bottom_content{
+        width: 80%;
+        margin: 4rem auto;
+        .hr_line{
+            width: 100%;
+            height: 1px;
+            background: #FFFFFF;
+            display: block;
+        }
+        .typos{
+            margin-top: .5rem;
+            display: flex;
             justify-content: center;
+            p{
+                font-family: 'Inter',sans-serif;
+                font-size: 14px;
+                color: #FFFFFF;
+            }
+            span{
+                margin-top: .2rem;
+                margin-inline: .8rem;
+                width: 1.5px;
+                height: 15px;
+                display: block;
+                background: #FFFFFF;
+            }
+        }
+    }
+    @media screen and (max-width:320px) {
+        height: 600px;
+        .wrapper{
+            margin-left: 1rem;
+            grid-template-columns: 1fr;
+            grid-gap: 1.5rem;
             .footer_line_1{
                 .footer_logo{
-                    width: 270px;
-                    height: auto;
-                }
-                .para{
-                    p{
-                        font-size: 16px;
-                        text-align: left;
-                        line-height: 1.2;
-                    }
+                    width: 220px;
+                    padding-bottom: 1rem;
                 }
             }
             .footer_line_2,.footer_line_3{
+                margin-bottom: 1rem;
+                h2{
+                    margin-bottom: 1rem;
+                }
                 p{
-                    margin-top: .4rem;
+                    margin-bottom: .5rem;
                 }
             }
         }
         .bottom_content{
-            width: 100%;
-            margin: 4rem auto;
-            text-align: center;
+            margin: 3rem auto;
+            width: 85%;
             .hr_line{
-                width: 80%;
-                margin: 0 auto;
-                height: 1px;
-                display: block;
-                background-color: white;
+                height: .5px;
             }
             .typos{
-                margin-top: .8rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p{
-                    font-family: 'Inter',sans-serif;
-                    font-size: 14px;
-                    color: white;
-                }
                 span{
                     margin-inline: .5rem;
-                    width: 1px;
-                    height: 10px;
-                    display: block;
-                    background-color: white;
                 }
             }
         }
     }
-    @media screen and (min-width:375px){
-        height: 580px;
-        padding-left: .5rem;
-        transition: all 1s ease;
+    @media screen and (min-width:321px) {
+        height: 600px;
         .wrapper{
-            grid-gap: 30px;
             grid-template-columns: 1fr;
-            justify-content: center;
+            margin-left: 1rem;
+            grid-gap: 1.5rem;
             .footer_line_1{
                 .footer_logo{
-                    width: 270px;
-                    height: auto;
-                }
-                .para{
-                    p{
-                        font-size: 16px;
-                        text-align: left;
-                        line-height: 1.2;
-                    }
+                    width: 230px;
+                    padding-bottom: 1rem;
                 }
             }
             .footer_line_2,.footer_line_3{
+                margin-bottom: 1rem;
+                h2{
+                    margin-bottom: 1rem;
+                }
                 p{
-                    margin-top: .4rem;
+                    margin-bottom: .5rem;
                 }
             }
         }
         .bottom_content{
-            width: 100%;
-            margin: 4rem auto;
-            text-align: center;
+            margin: 2.2rem auto;
+            width: 85%;
             .hr_line{
-                width: 80%;
-                margin: 0 auto;
-                height: 1px;
-                display: block;
-                background-color: white;
+                height: .5px;
             }
             .typos{
-                margin-top: .8rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p{
-                    font-family: 'Inter',sans-serif;
-                    font-size: 14px;
-                    color: white;
-                }
                 span{
                     margin-inline: .5rem;
-                    width: 1px;
-                    height: 10px;
-                    display: block;
-                    background-color: white;
                 }
             }
         }
     }
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width:375px) {
+        height: 600px;
+        .wrapper{
+            .footer_line_1{
+                .footer_logo{
+                    width: 250px;
+                    padding-bottom: 1.2rem;
+                }
+            }
+        }
+    }
+    @media screen and (min-width:768px) {
         height: 428px;
         .wrapper{
+            width: 90%;
+            margin: 0 auto;
             grid-template-columns: 1fr 1fr;
             .footer_line_1{
                 grid-area: 1;
+                .paragraph{
+                    font-size: 16px;
+                    width: 120%;
+                }
+            }
+            .footer_line_2,.footer_line_3{
+                margin-top: 1rem;
+                grid-area: 2;
                 width: 100%;
             }
-            .footer_line_2,.footer_line_3{
-                grid-area: 2;
+        }
+        .bottom_content{
+            margin: 1.5rem auto;
+            .hr_line{
+                width: 85%;
+                margin: .8rem auto;
             }
         }
     }
-    
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width:1200px) {
+        padding-top: 2rem;
         height: 266px;
         .wrapper{
-            grid-template-columns: 2fr 1fr 1fr;
-            .footer_line_1{
+            grid-template-columns: 45% 25% 25%;
+            margin: 0 auto;
+            width: 95%;
+            .footer_line_1,.footer_line_2,.footer_line_3{
                 grid-area: 1;
-                width: 80%;
+                .paragraph{
+                    width: 25rem;
+                    p{
+                        font-size: 16px;
+                    }
+                }
             }
-            .footer_line_2,.footer_line_3{
-                grid-area: 1;
+        }
+        .bottom_content{
+            width: 80%;
+            margin: .5rem auto;
+            .hr_line{
+                width: 65%;
+            }
+            .typos{
+                p{
+                    font-size: 14px;
+                }
+                span{
+                    margin-inline: 1.2rem;
+                }
             }
         }
     }
-    @media screen and (min-width: 1440px){
+    @media screen and (min-width:1440px) {
         height: 266px;
         .wrapper{
-            grid-template-columns: 2fr 1fr 1fr;
-            .footer_line_1{
-                grid-area: 1;
-                width: 60%;
+            .footer_line_1,.footer_line_2,.footer_line_3{
+                .footer_logo{
+                    width: 270px;
+                }
             }
         }
     }
